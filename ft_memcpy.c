@@ -6,7 +6,7 @@
 /*   By: pferrete <pferrete@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 11:18:22 by pferrete          #+#    #+#             */
-/*   Updated: 2023/04/20 11:14:54 by pferrete         ###   ########.fr       */
+/*   Updated: 2023/04/21 14:14:09 by pferrete         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,10 @@ void	*ft_memcpy(void *dest, const void *src, size_t count)
 	d = (unsigned char *) dest;
 	s = (unsigned char *) src;
 	i = 0;
+	if (d == NULL && s == NULL)
+	{
+		return (NULL);
+	}
 	while (count > 0)
 	{
 		d[i] = s[i];
