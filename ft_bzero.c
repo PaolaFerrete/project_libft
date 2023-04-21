@@ -12,6 +12,9 @@
 
 #include "libft.h"
 
+/*erase the data int the n bytes of the memory*/
+/* param: *str pointer, size_t n */
+
 void	ft_bzero(void *str, size_t n)
 {
 	unsigned char	*p;

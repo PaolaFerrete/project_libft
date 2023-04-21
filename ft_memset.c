@@ -11,6 +11,12 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
+#include <string.h>
+
+/*Copies the values into each of the first count characters of the pointer*/
+/*param: *str pointer, int value, size_t num */
+/*return copie of the pointer*/
 
 void	*ft_memset(void *str, int value, size_t num)
 {
