@@ -6,18 +6,18 @@
 /*   By: pferrete <pferrete@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 11:19:38 by pferrete          #+#    #+#             */
-/*   Updated: 2023/04/21 17:59:48 by pferrete         ###   ########.fr       */
+/*   Updated: 2023/04/21 18:25:54 by pferrete         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*copy string from src to dest and return lenght of  src*/
+
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	size_t	len;
 	size_t	i;
 
-	len = strlen(src);
 	i = 0;
 	if (!size)
 	{
