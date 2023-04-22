@@ -1,0 +1,35 @@
+#include <bsd/string.h>
+#include <stdio.h>
+#include <stddef.h>
+
+char *ft_strnstr(const char *big, const char *little, size_t len)
+{
+	size_t i;
+	size_t j;
+
+	i = 0;
+	if (!big || !little)
+		return (NULL);
+	if (*little == '\0')
+		return ((char *)big);
+	while (big[i] != '\0' && i < len)
+	{
+		j = 0;
+		while (big[i + j] == little[j] && i + j < len && big[i + j] != '\0')
+			j++;
+		if (!little[j])
+			return ((char *)big + i);
+		i++;
+	}
+	return (NULL);
+}
+
+int main(void)
+{
+	char *big = "Bom dia, como vai sua tia";
+	char *little = 0;
+
+	printf("%s\n", ft_strnstr(big, little, strlen(big)));
+
+	printf("%s\n", strnstr(big, little, strlen(big)));
+}

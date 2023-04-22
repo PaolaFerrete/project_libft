@@ -3,20 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pferrete <pferrete@student.42.fr>          +#+  +:+       +#+        */
+/*   By: paola <paola@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 15:03:44 by pferrete          #+#    #+#             */
-/*   Updated: 2023/04/19 13:30:44 by pferrete         ###   ########.fr       */
+/*   Updated: 2023/04/22 19:48:43 by paola            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *nptr)
+/*convert a byte string to an interger value */
+
+int ft_atoi(const char *nptr)
 {
-	int		i;
-	int		sign;
-	int		n;
+	int i;
+	int sign;
+	int n;
 
 	i = 0;
 	n = 0;
@@ -39,10 +41,3 @@ int	ft_atoi(const char *nptr)
 	}
 	return (n * sign);
 }
-/*
-int	main(void)
-{
-	ft_atoi("   -12456adcs12");
-	return (0);
-}
-*/

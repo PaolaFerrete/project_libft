@@ -3,18 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pferrete <pferrete@student.42.fr>          +#+  +:+       +#+        */
+/*   By: paola <paola@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 14:17:54 by pferrete          #+#    #+#             */
-/*   Updated: 2023/04/19 11:22:57 by pferrete         ###   ########.fr       */
+/*   Updated: 2023/04/22 17:27:38 by paola            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+/*compares a certain amount of characters of two strings */
+
+int ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	int	i;
+	int i;
 
 	i = 0;
 	while (n > 0)

@@ -3,16 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pferrete <pferrete@student.42.fr>          +#+  +:+       +#+        */
+/*   By: paola <paola@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 09:52:06 by pferrete          #+#    #+#             */
-/*   Updated: 2023/04/19 11:23:10 by pferrete         ###   ########.fr       */
+/*   Updated: 2023/04/22 17:26:09 by paola            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int c)
+/* convert a character to lowercase*/
+
+int ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 	{
