@@ -6,7 +6,7 @@
 /*   By: paola <paola@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 15:03:44 by pferrete          #+#    #+#             */
-/*   Updated: 2023/04/22 19:48:43 by paola            ###   ########.fr       */
+/*   Updated: 2023/04/23 11:31:14 by paola            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 /*convert a byte string to an interger value */
 
-int ft_atoi(const char *nptr)
+int	ft_atoi(const char *nptr)
 {
-	int i;
-	int sign;
-	int n;
+	int	i;
+	int	sign;
+	int	n;
 
 	i = 0;
 	n = 0;

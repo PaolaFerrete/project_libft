@@ -6,16 +6,16 @@
 /*   By: paola <paola@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 13:24:51 by pferrete          #+#    #+#             */
-/*   Updated: 2023/04/22 16:29:48 by paola            ###   ########.fr       */
+/*   Updated: 2023/04/23 11:35:42 by paola            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
-	int i;
-	char *ptr;
+	int		i;
+	char	*ptr;
 
 	i = 0;
 	while (s[i] != '\0')
