@@ -6,7 +6,7 @@
 /*   By: paola <paola@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 10:29:09 by pferrete          #+#    #+#             */
-/*   Updated: 2023/04/25 11:29:32 by paola            ###   ########.fr       */
+/*   Updated: 2023/04/25 16:45:16 by paola            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,5 +67,7 @@ int		ft_atoi(const char *nptr);
 void	*ft_calloc(size_t nmemb, size_t size);
 /*return a copy of string and use a malloc for memory allocated*/
 char	*ft_strdup(const char *s);
+/*return a pointer to substring*/
+char	*ft_substr(const char *s, unsigned int start, size_t len);
 
 #endif
