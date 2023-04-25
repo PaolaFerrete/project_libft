@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pferrete <pferrete@student.42.fr>          +#+  +:+       +#+        */
+/*   By: paola <paola@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 10:29:09 by pferrete          #+#    #+#             */
-/*   Updated: 2023/04/24 10:47:50 by pferrete         ###   ########.fr       */
+/*   Updated: 2023/04/25 11:29:32 by paola            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,5 +65,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_atoi(const char *nptr);
 /* return a pointer with dinamic memory*/
 void	*ft_calloc(size_t nmemb, size_t size);
+/*return a copy of string and use a malloc for memory allocated*/
+char	*ft_strdup(const char *s);
 
 #endif
