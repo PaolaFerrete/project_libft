@@ -6,7 +6,7 @@
 /*   By: paola <paola@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 10:29:09 by pferrete          #+#    #+#             */
-/*   Updated: 2023/04/25 16:45:16 by paola            ###   ########.fr       */
+/*   Updated: 2023/04/25 19:25:16 by paola            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,5 +69,7 @@ void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *s);
 /*return a pointer to substring*/
 char	*ft_substr(const char *s, unsigned int start, size_t len);
+/*return a pointer with two concateneted strings */
+char	*ft_strjoin(const char *s1, const char *s2);
 
 #endif
