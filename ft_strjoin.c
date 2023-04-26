@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: paola <paola@student.42.fr>                +#+  +:+       +#+        */
+/*   By: pferrete <pferrete@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 18:51:17 by paola             #+#    #+#             */
-/*   Updated: 2023/04/25 20:14:54 by paola            ###   ########.fr       */
+/*   Updated: 2023/04/26 10:12:58 by pferrete         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,4 +41,3 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	join[i] = '\0';
 	return (join);
 }
-

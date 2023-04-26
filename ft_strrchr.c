@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: paola <paola@student.42.fr>                +#+  +:+       +#+        */
+/*   By: pferrete <pferrete@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 14:19:55 by pferrete          #+#    #+#             */
-/*   Updated: 2023/04/23 11:33:08 by paola            ###   ########.fr       */
+/*   Updated: 2023/04/26 12:35:43 by pferrete         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,17 +20,12 @@ char	*ft_strrchr(const char *s, int c)
 	len = ft_strlen(s);
 	while (len >= 0)
 	{
-		if (s[len] == c)
+		if (s[len] == (char)c)
 		{
 			ptr = (char *)&s[len];
 			return (ptr);
 		}
 		len--;
-	}
-	if (c == '\0')
-	{
-		ptr = (char *)&s[len];
-		return (ptr);
 	}
 	return (NULL);
 }

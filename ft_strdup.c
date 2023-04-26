@@ -6,7 +6,7 @@
 /*   By: pferrete <pferrete@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 12:30:01 by pferrete          #+#    #+#             */
-/*   Updated: 2023/04/26 09:15:55 by pferrete         ###   ########.fr       */
+/*   Updated: 2023/04/26 12:18:19 by pferrete         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,6 @@ char	*ft_strdup(const char *s)
 	char	*cstring;
 	size_t	i;
 
-	if (!s)
-	{
-		return (NULL);
-	}
 	i = 0;
 	cstring = (char *)malloc(sizeof(*s) * (ft_strlen(s) + 1));
 	if (!cstring)
