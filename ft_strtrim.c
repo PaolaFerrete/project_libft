@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pferrete <pferrete@student.42.fr>          +#+  +:+       +#+        */
+/*   By: paola <paola@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 20:01:44 by paola             #+#    #+#             */
-/*   Updated: 2023/04/26 14:21:43 by pferrete         ###   ########.fr       */
+/*   Updated: 2023/04/27 11:59:19 by paola            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,30 +14,21 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	char	*s2;
-	char	*dest;
-	size_t	i;
-	size_t	j;
-	size_t	z;
+	int	len;
+	int	i;
+	int	j;
 
 	if (!s1)
-		return (NULL);
-	s2 = malloc(sizeof(char) * (ft_strlen(s1)) + 1);
-	if (!s2)
-		return (NULL);
+		return (0);
+	len = ft_strlen(s1);
 	i = 0;
-	z = 0;
-	while (s1[i] != '\0')
-	{
-		j = 0;
-		while (s1[i] != set[j] && set[j] != '\0')
-			j++;
-		if (s1[i] != set[j])
-		s2[z++] = s1[i];
+	j = len - 1;
+	while (i <= len / 2 && ft_strchr(set, s1[i]) != NULL)
 		i++;
-	}
-	dest = malloc(sizeof(char) * (z + 1));
-	dest = ft_memcpy(dest, s2, (sizeof(char) * z));
-	dest[z] = '\0';
-	return (dest);
+	while (j >= len / 2 && ft_strchr(set, s1[j]) != NULL)
+		j--;
+	if (i > j)
+		return (ft_strdup(""));
+	len = j - i;
+	return (ft_substr(s1, i, len + 1));
 }

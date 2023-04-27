@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pferrete <pferrete@student.42.fr>          +#+  +:+       +#+        */
+/*   By: paola <paola@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 10:29:09 by pferrete          #+#    #+#             */
-/*   Updated: 2023/04/26 14:21:57 by pferrete         ###   ########.fr       */
+/*   Updated: 2023/04/27 13:28:52 by paola            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,5 +73,7 @@ char	*ft_substr(const char *s, unsigned int start, size_t len);
 char	*ft_strjoin(const char *s1, const char *s2);
 /*return a pointer which has a trim string*/
 char	*ft_strtrim(char const *s1, char const *set);
+/**/
+char	**ft_split(char const *s, char c);
 
 #endif
