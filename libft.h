@@ -6,7 +6,7 @@
 /*   By: pferrete <pferrete@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 10:29:09 by pferrete          #+#    #+#             */
-/*   Updated: 2023/04/28 14:21:21 by pferrete         ###   ########.fr       */
+/*   Updated: 2023/04/28 14:55:36 by pferrete         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,5 +88,7 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 /*it's a function void. Print a string and \n*/
 void	ft_putendl_fd(char *s, int fd);
+/*it's a function void. Print an int*/
+void	ft_putnbr_fd(int n, int fd);
 
 #endif
