@@ -6,7 +6,7 @@
 #    By: pferrete <pferrete@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/19 11:55:04 by pferrete          #+#    #+#              #
-#    Updated: 2023/04/20 11:34:49 by pferrete         ###   ########.fr        #
+#    Updated: 2023/04/28 13:32:32 by pferrete         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,7 +40,7 @@ $(NAME): $(OBJ)
 	$(AR) $(ARFLAGS) $(NAME) $(OBJ)
 
 %.o: %.c %.h
-	$(CC) $(CC_FLAGS) -c $< -o $@ 
+	$(CC) $(CC_FLAGS) -c $< -o $@
 
 clean:
 	rm -f $(NAME) $(OBJ)

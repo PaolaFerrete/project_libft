@@ -6,7 +6,7 @@
 /*   By: pferrete <pferrete@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 10:29:09 by pferrete          #+#    #+#             */
-/*   Updated: 2023/04/28 11:37:24 by pferrete         ###   ########.fr       */
+/*   Updated: 2023/04/28 13:32:44 by pferrete         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <stdlib.h>
+# include <unistd.h>
 
 //return 0 if is not a character alphabetic, and 1 if it is
 int		ft_isalpha(int c);
@@ -81,5 +82,7 @@ char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 /*it's a function void*/
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+/*it's a function void */
+void	ft_putchar_fd(char c, int fd);
 
 #endif
