@@ -6,7 +6,7 @@
 /*   By: pferrete <pferrete@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 10:29:09 by pferrete          #+#    #+#             */
-/*   Updated: 2023/04/28 10:32:02 by pferrete         ###   ########.fr       */
+/*   Updated: 2023/04/28 10:42:14 by pferrete         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,6 +78,6 @@ char	**ft_split(char const *s, char c);
 /*return a char pointer with number to char*/
 char	*ft_itoa(int n);
 /*return a char pointer change for function f*/
-char	*ft_strmapi(const char s, char (*f)(unsigned int, char));
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 #endif
