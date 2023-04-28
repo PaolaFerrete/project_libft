@@ -6,7 +6,7 @@
 /*   By: pferrete <pferrete@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 10:29:09 by pferrete          #+#    #+#             */
-/*   Updated: 2023/04/28 14:04:16 by pferrete         ###   ########.fr       */
+/*   Updated: 2023/04/28 14:21:21 by pferrete         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,9 +82,11 @@ char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 /*it's a function void*/
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
-/*it's a function void */
+/*it's a function void. Print a character*/
 void	ft_putchar_fd(char c, int fd);
-/*it's a function void*/
+/*it's a function void. Print a string*/
 void	ft_putstr_fd(char *s, int fd);
+/*it's a function void. Print a string and \n*/
+void	ft_putendl_fd(char *s, int fd);
 
 #endif
