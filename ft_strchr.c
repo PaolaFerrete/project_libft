@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pferrete <pferrete@student.42.fr>          +#+  +:+       +#+        */
+/*   By: paola <paola@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 13:24:51 by pferrete          #+#    #+#             */
-/*   Updated: 2023/04/26 12:32:54 by pferrete         ###   ########.fr       */
+/*   Updated: 2023/05/01 08:47:17 by paola            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*Search for the first occurrence of the character */
 
 #include "libft.h"
 

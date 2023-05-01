@@ -6,9 +6,11 @@
 /*   By: paola <paola@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 20:01:44 by paola             #+#    #+#             */
-/*   Updated: 2023/04/27 11:59:19 by paola            ###   ########.fr       */
+/*   Updated: 2023/05/01 09:12:17 by paola            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*remove a character from the begining and the end of string*/
 
 #include "libft.h"
 

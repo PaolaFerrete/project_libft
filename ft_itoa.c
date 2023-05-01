@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pferrete <pferrete@student.42.fr>          +#+  +:+       +#+        */
+/*   By: paola <paola@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 18:44:30 by paola             #+#    #+#             */
-/*   Updated: 2023/04/28 09:04:09 by pferrete         ###   ########.fr       */
+/*   Updated: 2023/05/01 09:30:26 by paola            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_count_num(int num)
+static int	ft_count_num(int num)
 {
 	int	numdig;
 
@@ -29,7 +29,7 @@ int	ft_count_num(int num)
 	return (numdig);
 }
 
-char	*ft_copy(char *s, long num, int size)
+static char	*ft_copy(char *s, long num, int size)
 {
 	int	i;
 
