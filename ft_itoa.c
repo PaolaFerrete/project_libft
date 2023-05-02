@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: paola <paola@student.42.fr>                +#+  +:+       +#+        */
+/*   By: pferrete <pferrete@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 18:44:30 by paola             #+#    #+#             */
-/*   Updated: 2023/05/01 09:30:26 by paola            ###   ########.fr       */
+/*   Updated: 2023/05/02 10:01:49 by pferrete         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,6 @@ static char	*ft_copy(char *s, long num, int size)
 char	*ft_itoa(int n)
 {
 	char	*s;
-	int		i;
 	int		numdig;
 	long	num;
 
